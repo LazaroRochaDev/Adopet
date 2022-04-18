@@ -5,18 +5,28 @@ public class Dog {
     String picture;
     String race;
     String color;
+    String sex;
     String sizeGroup;
-    long age;
+    int age;
 
     public Dog() {
     }
 
-    public Dog(String name, String color, String sizeGroup, int age) {
+    public Dog(String name, String color, String sizeGroup, int age, String sex) {
         this.name = name;
         this.color = color;
         this.sizeGroup = sizeGroup;
         this.age = age;
         this.picture = "";
+        this.sex = sex;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public String getName() {
